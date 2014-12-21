@@ -15,19 +15,29 @@
     </properties>
     
     <repositories>
-        <repository>
+        <!--<repository>
             <id>prime-repo</id>
             <name>PrimeFaces Maven Repository</name>
             <url>http://central.maven.org/maven2/org/primefaces/primefaces</url>
             <layout>default</layout>
-        </repository>
+        </repository>-->
        
+        <repository>
+            <id>primefaces</id>
+            <name>primefaces</name>
+            <url>http://mvnrepository.com/artifact/org.primefaces/primefaces/</url>
+            <layout>default</layout>
+        </repository>
+        
         <repository>
             <id>org.springframeworksecurity.taglibs.facelets</id>
             <url>http://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs/</url>
         </repository>
         
-        
+        <repository>
+            <id>org.apache.logging.log4j</id>
+            <url>http://mvnrepository.com/artifact/org.apache.logging.log4j</url>
+        </repository>
     </repositories>
     
     <dependencies>
@@ -42,6 +52,30 @@
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
             <version>5.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>primefaces-themes</groupId>
+            <artifactId>smoothness</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>primefaces-themes</groupId>
+            <artifactId>south-street</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>primefaces-themes</groupId>
+            <artifactId>ui-lightness</artifactId>
+            <version>1.0.10</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>primefaces-themes</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>1.0.10</version>
         </dependency>
         
         <dependency>
@@ -72,6 +106,12 @@
             <groupId>org.hibernate.javax.persistence</groupId>
             <artifactId>hibernate-jpa-2.0-api</artifactId>
             <version>1.0.1.Final</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.1</version>
         </dependency>
 
     </dependencies>
